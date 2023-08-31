@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let id1 = "html"
+    let id2 = "htmlHongngu"
+    function isSubstring(id1, id2) {
+        for (let i = 0; i <= id2.length - id1.length; i++) {
+            let j;
+            for ( j = 0; j < id1.length; j++) {
+                if (id2[i + j] !== id1[j]) {
+                    break;
+                }
+            }
+            if (j === id1.length) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    console.log(isSubstring(id1,id2))
+</script>
+
+
+</body>
+</html>
